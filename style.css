@@ -18,10 +18,45 @@ body {
     justify-content: center;
 }
 
+/********* Header ***********/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 109px;
+}
+
 #logo {
     width: 61.09px;
     height: auto;
 }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 14px 42.61px;
+}
+
+nav li:hover {
+    border-top: solid 2px #0065FC;
+    cursor: pointer;
+}
+
+nav li:hover a {
+    color: #0065FC;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+  /*****************/
 
 .main-container {
     width: 100%;
