@@ -14,22 +14,28 @@
 }
 
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
 
 /********* Header ***********/
 header {
+    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
     height: 109px;
 }
 
 #logo {
     width: 61.09px;
-    height: auto;
+    height: 19px;
+    padding-top: 30px;
+}
+
+nav {
+    padding-top: 0;
 }
 
 nav ul {
@@ -38,7 +44,7 @@ nav ul {
 }
 
 nav li {
-    padding: 14px 42.61px;
+    padding: 0px 42.61px;
 }
 
 nav li:hover {
@@ -54,15 +60,31 @@ nav li:hover a {
     text-decoration: none;
     font-weight: 500;
     color: black;
+    margin-top: 0;
+}
+/***************************/
+/*******Formulaire**********/
+
+.research-bar {
+    width: 377px;
+    height: 49px;
+    list-style-type: none;
+    border: 1px grey solid;
+    border-radius: 15px;
+    display: flex;
 }
 
-  /*****************/
-
+/****************************/
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 30px;
     box-sizing: border-box;
+}
+
+.site-subtitle {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .section-title {
