@@ -22,24 +22,32 @@
             <img src="./images/logo/Booki@3x.png" alt="logo du site" id="logo">
             <nav>
                 <ul class="menu">
-                    <li><a href="#ancre-hebergments">Hébergements</a></li>
-                    <li><a href="#ancre-activites">Activités</a></li>
+                    <li class="hebergements-link"><a href="#ancre-hebergments">Hébergements</a></li>
+                    <li class="activites-link"><a href="#ancre-activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h3 class="site-subtitle">En plein centre-ville ou en pleine nature</h3>
+            <section>
+                <h1 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h3 class="site-subtitle">En plein centre-ville ou en pleine nature</h3>
 
-            <form action="recherche.php" method="GET">
-                <div class="research-bar">
+                <form class="research-bar" action="" method="get">
                     <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" name="query" placeholder="Marseille, France">
-                    <input type="submit" value="Rechercher">
-                </div>
-            </form>
-            
+                    <input class="text-area" type="text" name="query" placeholder="Marseille, France">
+                    <input class="research-button" type="submit" value="Rechercher">
+                </form>
+
+                <form class="bar-filters" action="" method="get">
+                    <input class="filters-title" type="text" value="Filtres">
+                    <input class="economique-button" type="submit" value="Économique">
+                    <input class="familial-button" type="submit" value="Familial">
+                    <input class="romantique-button" type="submit" value="Romantique">
+                    <input class="nos-pepites-button" type="submit" value="Nos pépites">
+                </form>
+
+            </section>
             
             <div class="hebergements-and-populaires">
                 

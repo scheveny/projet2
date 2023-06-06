@@ -21,47 +21,52 @@ body {
 
 /********* Header ***********/
 header {
-    margin-top: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 109px;
 }
 
 #logo {
     width: 61.09px;
     height: 19px;
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-nav {
-    padding-top: 0;
-}
-
-nav ul {
+.menu {
     display: flex;
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-nav li {
-    padding: 0px 42.61px;
+.menu a {
+    text-decoration-line: none;
+    color: black;
 }
 
-nav li:hover {
+.hebergements-link {
+    padding-top: 16px;
+    margin-right: 69px;
+}
+
+.activites-link {
+    padding-top: 16px;
+    margin-right: 0.31px;
+}
+
+.hebergements-link:hover {
+    color: #0065FC;                     /*******pourquoi le txte n'est pas bleu lors du survol?************/
     border-top: solid 2px #0065FC;
     cursor: pointer;
 }
 
-nav li:hover a {
-    color: #0065FC;
+.activites-link:hover {
+    color: #0065FC;                     /*******pourquoi le txte n'est pas bleu lors du survol?************/
+    border-top: solid 2px #0065FC;
+    cursor: pointer;
 }
 
-.menu a {
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-    margin-top: 0;
-}
 /***************************/
 /*******Formulaire**********/
 
@@ -69,22 +74,75 @@ nav li:hover a {
     width: 377px;
     height: 49px;
     list-style-type: none;
-    border: 1px grey solid;
-    border-radius: 15px;
     display: flex;
+    justify-content: space-between;
+    border: none;
+    margin-bottom: 50px;
+}
+
+[class="fas fa-map-marker-alt"] {
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    position: relative;
+}
+
+[class="fas fa-map-marker-alt"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 18px;
+  }
+
+.text-area {
+    width: 195px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;                           /****pourquoi le texte est en gris?*****/
+}
+
+.research-button {
+    width: 132px;
+    border: none;
+    border-right: 15px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0 15px 15px 0;
+}
+/**********Filtres du formulaire**********/
+
+.bar-filters {
+    display: flex;
+    padding: 0;
+    gap: 30px;
+}
+
+.filters-title {
+    width: 54px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
 }
 
 /****************************/
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 30px;
+    padding: 0 50px 0 50px;
     box-sizing: border-box;
 }
 
 .site-subtitle {
     font-size: 16px;
     font-weight: 400;
+    margin-top: 8px;
+    margin-bottom: 35px;
 }
 
 .section-title {
