@@ -55,8 +55,11 @@ header {
     margin-right: 0.31px;
 }
 
-.hebergements-link:hover {
-    color: #0065FC;                     /*******pourquoi le txte n'est pas bleu lors du survol?************/
+.text-link-color:hover {
+    color: #0065FC;
+}
+
+.hebergements-link:hover {                     /*******pourquoi le txte n'est pas bleu lors du survol?************/
     border-top: solid 2px #0065FC;
     cursor: pointer;
 }
