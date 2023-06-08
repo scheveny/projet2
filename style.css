@@ -59,13 +59,13 @@ header {
     color: #0065FC;
 }
 
-.hebergements-link:hover {                     /*******pourquoi le txte n'est pas bleu lors du survol?************/
+.hebergements-link:hover {                     
     border-top: solid 2px #0065FC;
     cursor: pointer;
 }
 
 .activites-link:hover {
-    color: #0065FC;                     /*******pourquoi le txte n'est pas bleu lors du survol?************/
+    color: #0065FC;
     border-top: solid 2px #0065FC;
     cursor: pointer;
 }
@@ -96,8 +96,6 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 14px;
-    height: 18px;
   }
 
 .text-area {
@@ -105,7 +103,7 @@ header {
     text-align: center;
     font-size: 18px;
     font-weight: 700;
-    color: black;                           /****pourquoi le texte est en gris?*****/
+    color: black;
 }
 
 .research-button {
@@ -124,14 +122,43 @@ header {
     display: flex;
     padding: 0;
     gap: 30px;
+    width: 758px;
+    height: 50px;
+    margin-bottom: 32.5px;
 }
 
 .filters-title {
+    display: flex;
+    align-items: center;
     width: 54px;
     font-size: 18px;
     font-weight: 700;
     border: none;
 }
+
+.filter-buttons {
+    display: flex;
+    flex: none;                 /***pour que "nos pépites" soient sur la même ligne***/
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    background-color: white;
+    border: #d9d9d9 solid 2px;
+    border-radius: 25px;
+    gap: 10px;
+    padding: 4px 19px;
+}
+
+.filter-info {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    gap: 10px;
+}
+
 
 /****************************/
 .main-container {
@@ -193,6 +220,8 @@ header {
 .hebergements {
     width: 65%;
 }
+
+
 
 /****** Populaires ***********/
 .populaires {
