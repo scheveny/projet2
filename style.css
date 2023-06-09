@@ -336,7 +336,7 @@ header {
 .activites-cards {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 65px;
     gap: 30px;
 }
 
@@ -374,7 +374,28 @@ header {
 
 /********FOOTER*********/
 
+footer {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 25% 25% 25% 25%;
+    background-color: #F2F2F2;
+    padding: 12.5px 12.5px 0 12.5px;
+}
 
+footer a {
+    padding: 7.5px 0 7.5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.footer-titles {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer-links {
+    font-size: 16px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
