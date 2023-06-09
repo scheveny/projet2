@@ -70,10 +70,6 @@ header {
     cursor: pointer;
 }
 
-.ancre {
-    text-decoration-line: none;
-    color: black;
-}
 
 /***************************/
 /*******Formulaire**********/
@@ -104,6 +100,8 @@ header {
   }
 
 .text-area {
+    border: solid 1px #F2F2F2;
+    border-right: none;
     width: 195px;
     text-align: center;
     font-size: 18px;
@@ -436,6 +434,20 @@ footer a {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .activites-cards {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 65px;
+        gap: 30px;
+    }
+
+    .activites-cards img {
+    width: auto;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     }
 }
 
