@@ -167,6 +167,7 @@ header {
     gap: 10px;
 }
 
+
 /***********MAIN*****************/
 .main-container {
     width: 100%;
@@ -378,22 +379,23 @@ header {
 /********FOOTER*********/
 
 footer {
-    display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 25% 25% 25% 25%;
     background-color: #F2F2F2;
-    padding: 12.5px 12.5px 0 12.5px;
 }
 
-footer a {
-    padding: 7.5px 0 7.5px 20px;
-    text-decoration: none;
-    color: black;
+.footer-menu {
+    display: flex;
+    padding-left: 20px;
+    gap: 20%;
+}
+
+.footer-links {
+    padding: 7.5px 0 7.5px 0;
 }
 
 .footer-titles {
     font-size: 18px;
     font-weight: 700;
+    padding: 20px 0 7.5px 0;
 }
 
 .footer-links {
