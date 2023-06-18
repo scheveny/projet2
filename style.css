@@ -13,6 +13,7 @@
     color: var(--main-color);
 }
 
+
 body {
     margin: 0;
     display: flex;
@@ -64,19 +65,17 @@ header {
 
 .activites-link:hover {
     border-top: solid 2px #0065FC;
-    cursor: pointer;
+cursor: pointer;
 }
 
 
 /***************************/
 /*******Formulaire**********/
 
-.research-bar {
-    width: 26.2%;
+form {
+    width: 377px;
     height: 49px;
-    list-style-type: none;
     display: flex;
-    justify-content: space-between;
     border: none;
     margin-bottom: 50px;
 }
@@ -116,6 +115,11 @@ header {
     font-weight: 700;
     border-radius: 0 15px 15px 0;
 }
+
+.search-icon {
+    display: none;
+}
+
 /**********Filtres du formulaire**********/
 
 .bar-filters {
@@ -370,22 +374,20 @@ header {
 
 .footer-menu {
     background-color: #F2F2F2;
-    display: flex;
-    flex: none;
-    padding-left: 20px;
-    gap: 20%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
 .footer-sub-menu {
     list-style-type: none;
-    padding: 0;
+    padding-left: 25px;
 }
 
 .footer-sub-menu li {
     padding: 7.5px 0 7.5px 0;
 }
 
-.footer-titles {
+.footer-title {
     font-size: 18px;
     font-weight: 700;
     padding: 20px 0 7.5px 0;
@@ -453,7 +455,7 @@ header {
         gap: 3.5%;
     }
 
-    .activites-cards .card {            /*****pour que les cards soient de la même taille et bien espacées ????************/
+    .activites-cards .card {
         width: 30%;
     }
 
@@ -525,6 +527,31 @@ header {
         padding: 0 6% 0 6%;
     }
 
+    form {
+        width: 335px;
+        margin-bottom: 30px;
+    }
+
+    .research-button {
+        width: 49px;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .search-icon {
+        display: flex;
+    }
+
+    .search-icon .fa-solid {
+        color: white;
+    }
+
     .filters-title {
         margin-top: 0;
     }
@@ -567,7 +594,9 @@ header {
         "card4"
         "card6"
         "card2";
+        margin-bottom: 0;
     }
+
 
     .populaires {
         margin-top: 0;
@@ -611,5 +640,4 @@ header {
         display: block;
         padding: 7%;
     }
-
 }
