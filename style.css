@@ -106,6 +106,10 @@ form {
 }
 
 .research-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     width: 132px;
     border: none;
     border-right: 15px;
@@ -286,8 +290,9 @@ form {
     margin-bottom: 5px;
 }
 
-.afficher-plus-button {
-    border: none;
+.afficher-plus-link {
+    text-decoration: none;
+    color: black;
     font-size: 18px;
     font-weight: 700;
 }
@@ -585,7 +590,7 @@ form {
 
     .hebergements-cards {
         display: grid;
-        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         grid-template-columns: 100%;
         grid-template-areas:                         /*****pour changer l'ordre d'apparition des hôtels******/
         "card1"
@@ -594,7 +599,6 @@ form {
         "card4"
         "card6"
         "card2";
-        margin-bottom: 0;
     }
 
 
