@@ -15,9 +15,10 @@
 
 
 body {
-    margin: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
+    max-width: 1440px;
 }
 
 /********* Header ***********/
@@ -104,6 +105,10 @@ form {
     font-weight: 700;
     color: black;
     padding: 0;
+}
+
+.text-area::placeholder {
+    font-size: 18px;
 }
 
 .research-button {
@@ -370,9 +375,12 @@ form {
 }
 
 .activites-cards .card-title {
-    padding-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding-left: 19px;
+}
+
+.activites-cards .short-card-title {
+    font-size: 16px;
+    padding-left: 19px;
 }
 
 /********FOOTER*********/
@@ -386,17 +394,18 @@ form {
 
 .footer-sub-menu {
     list-style-type: none;
-    padding-left: 25px;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .footer-sub-menu li {
-    padding: 7.5px 0 7.5px 0;
+    padding-top: 15px;
 }
 
 .footer-title {
     font-size: 18px;
     font-weight: 700;
-    padding: 20px 0 7.5px 0;
 }
 
 .footer-links {
@@ -408,6 +417,7 @@ form {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
@@ -441,23 +451,23 @@ form {
         width: 30%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .activites-section {
         padding: 0;
     }
 
+    .activites-section .section-title {
+        padding-left: 30px;
+    }
+
     .activites-cards {
         display: flex;
-        padding: 0 2.5% 0 2.5%;
+        padding: 0 30px 0 30px;
         margin-bottom: 65px;
-        gap: 3.5%;
+        gap: 30px;
     }
 
     .activites-cards .card {
@@ -466,9 +476,14 @@ form {
     }
 
     .activites-cards img {
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activites-cards .short-card-title {
+        padding-left: 19px;
+        padding-top: 5px;
     }
 
     .footer-menu {
@@ -480,12 +495,9 @@ form {
 /* Small devices (phones, less than 768px) */
 
 @media (max-width: 767.98px) {
+
     .main-container {
         padding: 0;
-    }
-
-    .sub-header {
-        display: block;
     }
 
     /***************************/
@@ -494,7 +506,7 @@ form {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 6%;
+        padding-bottom: 30px;
     }
 
     .header-menu {
@@ -529,15 +541,21 @@ form {
     /***************************/
 
     .sub-header {
-        padding: 0 6% 0 6%;
+        display: block;
+        padding: 0 20px 0 20px;
     }
 
     form {
+        width: 335px;
         margin-bottom: 30px;
     }
 
     .text-area {
         width: 236px;
+    }
+
+    .text-area::placeholder {
+        text-indent: -50px;
     }
 
     .research-button {
@@ -547,7 +565,7 @@ form {
         justify-content: center;
         align-items: center;
         position: relative;
-        left: -8px;
+        left: -5px;
     }
 
     .search-text {
@@ -583,6 +601,9 @@ form {
     .hebergements-and-populaires section {
         border-radius: 0;
         margin-bottom: 0;
+        margin-top: 15px;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 
     .hebergements-and-populaires .hebergements {
@@ -606,6 +627,10 @@ form {
         "card2";
     }
 
+    .afficher-plus-link {
+        position: relative;
+        left: -10px;
+    }
 
     .populaires {
         margin-top: 0;
@@ -621,11 +646,15 @@ form {
     }
 
     .populaires-cards .card {
-        width: 100%;
+        width: 96.9%;
     }
 
     .activites-section {
-        padding: 8%;
+        padding: 25px 30px 35px 30px;
+    }
+
+    .activites-section .section-title {
+        padding-left: 0;
     }
 
     .activites-cards {
@@ -642,10 +671,18 @@ form {
         margin-top: 15px;
     }
 
+
     /***************************/
 
     .footer-menu {
         display: block;
-        padding: 7%;
+        padding-top: 15px;
     }
+
+    .footer-sub-menu {
+        padding: 0 0 30px 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
 }
