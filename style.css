@@ -167,6 +167,7 @@ form {
     gap: 10px;
 }
 
+
 .filter-button:hover {
     cursor: pointer;
     background-color: var(--filter-bg-color);
@@ -255,11 +256,6 @@ form {
     margin-bottom: 30px;
 }
 
-.hebergements-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .hebergements-cards .card {
     margin-top: 33px; 
@@ -428,6 +424,10 @@ form {
         display: flex;
     }
 
+    .filter-button {
+        font-size: 16px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -591,6 +591,10 @@ form {
         grid-template-rows: 50% 50%;
     }
 
+    .filter.button {
+        font-size: 14px;
+    }
+
     /***************************/
 
     .hebergements-and-populaires {
@@ -601,8 +605,7 @@ form {
         border-radius: 0;
         margin-bottom: 0;
         margin-top: 15px;
-        padding-top: 20px;
-        padding-bottom: 30px;
+        padding: 20px 20px 30px 20px;
     }
 
     .hebergements-and-populaires .hebergements {
@@ -615,7 +618,7 @@ form {
 
     .hebergements-cards {
         display: grid;
-        grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+        grid-template-rows: 207.25px 207.25px 207.25px 207.25px 207.25px 207.25px;
         grid-template-columns: 100%;
         grid-template-areas:                         /*****pour changer l'ordre d'apparition des hôtels******/
         "card1"
@@ -624,11 +627,12 @@ form {
         "card4"
         "card6"
         "card2";
+        row-gap: 15px;
+        margin-top: 15px;
     }
 
-    .afficher-plus-link {
-        position: relative;
-        left: -10px;
+    .hebergements-cards .card {
+        margin-top: 0;
     }
 
     .populaires {
@@ -641,29 +645,48 @@ form {
     }
 
     .populaires-cards {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 15px;
     }
 
     .populaires-cards .card {
         width: 96.9%;
+        margin-top: 0;
     }
 
     .activites-section {
-        padding: 25px 30px 35px 30px;
+        height: 965px;
+        padding: 25px 30px 65px 30px;
     }
 
     .activites-section .section-title {
         padding-left: 0;
+        padding-top: 30px;
     }
 
     .activites-cards {
-        display: block;
-        margin-bottom: 30px;
-        padding: 0;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+        row-gap: 15px;
+        padding: 30px 0 30px 0;
     }
 
     .activites-cards .card {
         width: 100%;
+        height: 200px;
+        margin-top: 0;
+    }
+
+    .activites-cards img {
+        width: 100%;
+        height: 141px;
+    }
+
+    .activites-cards .card-content {
+        height: 59px;
     }
 
     .activites-cards .card-title {
