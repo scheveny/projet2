@@ -66,7 +66,7 @@ header {
 
 .activites-link:hover {
     border-top: solid 2px #0065FC;
-cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -248,12 +248,12 @@ form {
 
 .hebergements-cards {
     display: grid;
-    grid-template-rows: 207.25px 207.25px;
-    grid-template-columns: 31% 31% 31%;
-    column-gap: 3.33%;
+    grid-template-rows: 46.5% 46.5%;
+    grid-template-columns: 31% 31% 31%;        /**en % pour respecter les différentes résolutions**/
+    column-gap: 3.5%;
     row-gap: 30px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .hebergements-cards img {
@@ -268,8 +268,6 @@ form {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .hebergements-cards .card-title {
@@ -314,6 +312,7 @@ form {
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    box-sizing: border-box; 
 }
 
 .populaires-cards .card-content {
@@ -323,8 +322,8 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;                 /**pour que les images et le content s'adaptent aux mesures **/
+}                                           /**de remplissage spécifiées malgré leurs "vraies tailles"**/
 
 .populaires-cards .card-title {
     margin-top: 10px;
@@ -432,14 +431,6 @@ form {
         width: 100%;
     }
 
-    .hebergements-cards {
-        grid-template-columns: 31% 31% 31%;
-        row-gap: 30px;
-        column-gap: 3.5%;
-        margin-bottom: 30px;
-    }
-
-
     .populaires-cards {
         display: flex;
         flex-direction: row;
@@ -447,7 +438,7 @@ form {
     }
 
     .populaires-cards .card {
-        width: 32%;
+        width: 33%;
     }
 
     .populaires-cards .card-subtitle {
@@ -463,15 +454,9 @@ form {
     }
 
     .activites-cards {
-        display: flex;
         padding: 0 30px 0 30px;
         margin-bottom: 65px;
         gap: 30px;
-    }
-
-    .activites-cards .card {
-        display: flex;
-        flex-direction: column;
     }
 
     .activites-cards img {
@@ -618,7 +603,7 @@ form {
 
     .hebergements-cards {
         display: grid;
-        grid-template-rows: 207.25px 207.25px 207.25px 207.25px 207.25px 207.25px;
+        grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         grid-template-columns: 100%;
         grid-template-areas:                         /*****pour changer l'ordre d'apparition des hôtels******/
         "card1"
