@@ -210,6 +210,11 @@ form {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
 .card img {
     object-fit: cover;
 }
@@ -303,8 +308,11 @@ form {
 }
 
 .populaires-cards .card {
-    display: flex;
     margin-top: 33px;
+}
+
+.populaires-cards .card a {
+    display: flex;
 }
 
 .populaires-cards img {
@@ -605,10 +613,10 @@ form {
         display: grid;
         grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
         grid-template-columns: 100%;
-        grid-template-areas:                         /*****pour changer l'ordre d'apparition des hôtels******/
+        grid-template-areas:
         "card1"
         "card5"
-        "card3"
+        "card3"      /*pour changer l'ordre d'apparition des hôtels*/
         "card4"
         "card6"
         "card2";
@@ -641,6 +649,8 @@ form {
         width: 96.9%;
         margin-top: 0;
     }
+
+    /******************************************/
 
     .activites-section {
         height: 965px;
