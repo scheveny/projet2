@@ -18,13 +18,13 @@ body {
     display: flex;
     justify-content: center;
     margin: 0;
+    min-width: 320px;
     max-width: 1440px;
 }
 
 /********* Header ***********/
 header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -59,134 +59,14 @@ header {
     color: #0065FC;
 }
 
-.hebergements-link:hover {                     
+.hebergements-link:hover, .activites-link:hover  {                     
     border-top: solid 2px #0065FC;
     cursor: pointer;
 }
-
-.activites-link:hover {
-    border-top: solid 2px #0065FC;
-    cursor: pointer;
-}
-
-
-/***************************/
-/*******Formulaire**********/
-
-form {
-    width: 377px;
-    height: 49px;
-    display: flex;
-    border: none;
-    margin-bottom: 50px;
-}
-
-[class="fas fa-map-marker-alt"] {
-    width: 50px;
-    background-color: #F2F2F2;
-    border-radius: 15px 0 0 15px;
-    position: relative;
-}
-
-[class="fas fa-map-marker-alt"]::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-.text-area {
-    border: solid 1px #F2F2F2;
-    border-right: none;
-    width: 195px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 700;
-    color: black;
-    padding: 0;
-}
-
-.text-area::placeholder {
-    font-size: 18px;
-}
-
-.research-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 132px;
-    border: none;
-    border-right: 15px;
-    background-color: var(--main-color);
-    color: white;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 0 15px 15px 0;
-}
-
-.search-icon {
-    display: none;
-}
-
-/**********Filtres du formulaire**********/
-
-.bar-filters {
-    display: flex;
-    gap: 10px;
-}
-
-.filters-title {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 700;
-    border: none;
-}
-
-.filter-buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.filter-button {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    border: #d9d9d9 solid 2px;
-    border-radius: 25px;
-    padding: 4px 19px;
-    gap: 10px;
-    font-size: 17px;
-    background-color: white;
-    font-weight: 700;
-}
-
-
-.filter-button:hover {
-    cursor: pointer;
-    background-color: var(--filter-bg-color);
-}
-
-.filter-info {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    font-weight: 400;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 0;
-    gap: 10px;
-}
-
 
 /***********MAIN*****************/
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px 0 50px;
     box-sizing: border-box;
 }
@@ -228,8 +108,118 @@ form {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
+
+/*******Formulaire**********/
+
+form {
+    width: 377px;
+    height: 49px;
+    display: flex;
+    border: none;
+    margin-bottom: 50px;
+}
+
+[class="fas fa-map-marker-alt"] {
+    width: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    position: relative;
+}
+
+[class="fas fa-map-marker-alt"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.text-area {
+    border: solid 1px #F2F2F2;
+    border-right: none;
+    width: 195px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    padding: 0;
+}
+
+.text-area::placeholder {
+    font-size: 18px;
+    color: black;
+}
+
+.research-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 132px;
+    border: none;
+    border-right: 15px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 0 15px 15px 0;
+}
+
+.search-icon {
+    display: none;
+}
+
+/**********Filtres du formulaire**********/
+
+.bar-filters {
+    display: flex;
+    gap: 10px;
+}
+
+.filters-title {
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+}
+
+.bar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border: #d9d9d9 solid 2px;
+    border-radius: 25px;
+    padding: 4px 19px;
+    gap: 10px;
+    font-size: 17px;
+    background-color: white;
+    font-weight: 700;
+}
+
+
+.filter-button:hover {
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+.filter-info {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    gap: 10px;
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -242,8 +232,8 @@ form {
     border-radius: 20px;
     padding: 30px;
     margin-bottom: 42px;
-    box-sizing: border-box;
-}
+    box-sizing: border-box;                 /**pour que les images et le content s'adaptent aux mesures **/
+}                                           /**de remplissage spécifiées malgré leurs "vraies tailles"**/
 
 
 /****** Hebergements ***********/
@@ -330,8 +320,8 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;                 /**pour que les images et le content s'adaptent aux mesures **/
-}                                           /**de remplissage spécifiées malgré leurs "vraies tailles"**/
+    box-sizing: border-box;
+}                 
 
 .populaires-cards .card-title {
     margin-top: 10px;
@@ -401,8 +391,7 @@ form {
 }
 
 .footer-title {
-    font-size: 18px;
-    font-weight: 700;
+    margin: 0;
 }
 
 .footer-links {
@@ -422,9 +411,6 @@ form {
         display: block;
     }
 
-    .filter-buttons {
-        display: flex;
-    }
 
     .filter-button {
         font-size: 16px;
@@ -441,7 +427,6 @@ form {
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
         gap: 20px;
     }
 
@@ -506,25 +491,13 @@ form {
         text-align: center;
     }
 
-    .hebergements-link {
+    .hebergements-link, .activites-link  {
         width: 50%;
         padding-bottom: 15px;
         margin: 0;
     }
 
-    .activites-link {
-        width: 50%;
-        padding-bottom: 15px;
-        margin: 0;
-    }
-
-    .hebergements-link:hover {                     
-        border-top: 0px;
-        border-bottom: #0065FC solid 2px;
-        cursor: pointer;
-    }
-    
-    .activites-link:hover {
+    .hebergements-link:hover, .activites-link:hover {                     
         border-top: 0px;
         border-bottom: #0065FC solid 2px;
         cursor: pointer;
@@ -532,7 +505,7 @@ form {
     
     /***************************/
 
-    .sub-header {
+    .searchbar-and-filters {
         display: block;
         padding: 0 20px 0 20px;
     }
@@ -553,8 +526,6 @@ form {
     .research-button {
         width: 49px;
         border-radius: 15px;
-        display: flex;
-        justify-content: center;
         align-items: center;
         position: relative;
         left: -5px;
@@ -576,7 +547,7 @@ form {
         margin-top: 0;
     }
 
-    .filter-buttons {
+    .bar-buttons {
         width: 98%;
         white-space: nowrap;
         display: grid;
@@ -639,7 +610,6 @@ form {
     }
 
     .populaires-cards {
-        display: flex;
         flex-direction: column;
         margin-top: 15px;
         gap: 15px;
