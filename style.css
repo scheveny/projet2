@@ -29,7 +29,7 @@ header {
 }
 
 #logo {
-    width: 61.09px;
+    width: 61px;
     height: 19px;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -96,7 +96,7 @@ header {
 }
 
 .card img {
-    object-fit: cover;
+    object-fit: cover;              /***** redimensionne l'image pour couvrir complètement le conteneur tout en conservant le rapport hauteur/largeur ********/
 }
 
 .card-title {
